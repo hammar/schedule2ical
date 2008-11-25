@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+PRODID:-//Karl Bengtsson//schedule2ical//SE
+VERSION:2.0
+X-WR-TIMEZONE:Europe/Stockholm
+{% for post in schedule %}
+BEGIN:VEVENT
+DESCRIPTION:{{post.description}}
+DTSTART;TZID=Europe/Stockholm:{{post.startTime}}
+DTEND;TZID=Europe/Stockholm:{{post.endTime}}
+LOCATION:{{post.room}}
+ORGANIZER;CN={{post.teacher}}:
+SUMMARY:{{post.course}}
+END:VEVENT
+{% endfor %}
+END:VCALENDAR
