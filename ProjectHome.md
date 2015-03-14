@@ -1,0 +1,1 @@
+This is a simple web app built on top of Google App Engine that reads a schedule from the Jönköping University schedule server (http://schema.hj.se) and reformats the schedule in iCal format.
