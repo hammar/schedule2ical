@@ -1,4 +1,4 @@
-application: schedule2ical
+application: schedule2ical-hrd
 version: 1
 runtime: python
 api_version: 1
